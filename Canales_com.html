@@ -9,7 +9,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
-    <title>Canales de Comunicación en Telecomunicaciones 📡</title>
+    <title>Canales de Comunicación</title>
 </head>
 <body>
 
@@ -21,9 +21,9 @@
     <main>
 
         <section id="introduccion">
-            <h2>¿Qué es un Canal de Comunicación?</h2>
-            <p>En el corazón de cualquier sistema de telecomunicaciones se encuentra el **canal de comunicación**: el medio físico o el espacio libre a través del cual una señal electromagnética se propaga desde un transmisor hasta un receptor. Es el camino invisible (o visible) que la información recorre, y sus características son determinantes para la calidad, velocidad y fiabilidad de la comunicación.</p>
-            <p>Es crucial diferenciarlo del *medio de comunicación* (como la radio o la televisión, que son sistemas completos); el canal es la infraestructura subyacente que permite su funcionamiento. Sus propiedades intrínsecas, como el ancho de banda, el ruido y la atenuación, son los factores limitantes que los ingenieros deben optimizar.</p>
+            <h2>¿Qué es un canal de comunicación?</h2>
+            <p>En el corazón de cualquier sistema de telecomunicaciones se encuentra el <b>canal de comunicación</b>: el medio físico o el espacio libre a través del cual una señal electromagnética se propaga desde un transmisor hasta un receptor. Es el camino invisible (o visible) que la información recorre, y sus características son determinantes para la calidad, velocidad y fiabilidad de la comunicación.</p>
+            <p>Es crucial diferenciarlo del <b>medio de comunicación</b> (como la radio o la televisión, que son sistemas completos); el canal es la infraestructura subyacente que permite su funcionamiento. Sus propiedades intrínsecas, como el ancho de banda, el ruido y la atenuación, son los factores limitantes que los ingenieros deben optimizar.</p>
             <div class="image-container">
                 
             </div>
@@ -32,22 +32,22 @@
         <hr>
 
         <section id="conceptos-fundamentales">
-            <h2>Conceptos Fundamentales del Canal</h2>
+            <h2>Conceptos fundamentales del canal</h2>
             <p>El estudio de los canales se centra en comprender y mitigar los desafíos que estos introducen en el proceso de comunicación.</p>
 
-            <h3>Capacidad del Canal (Teorema de Shannon-Hartley)</h3>
-            <p>La **capacidad del canal** es la métrica más importante, ya que define la máxima tasa de transferencia de información que un canal puede soportar de manera fiable sin errores. El icónico **Teorema de Shannon-Hartley** establece esta capacidad:</p>
+            <h3>Capacidad del canal (Teorema de Shannon-Hartley)</h3>
+            <p>La <b>capacidad del canal</b> es la métrica más importante, ya que define la máxima tasa de transferencia de información que un canal puede soportar de manera fiable sin errores. El icónico <b>Teorema de Shannon-Hartley</b> establece esta capacidad:</p>
             
             <div class="formula">
                 $$C = B \cdot \log_2\left(1 + \frac{S}{N}\right)$$
             </div>
             
             <ul>
-                <li>**C: Capacidad** del canal (bits por segundo, bps).</li>
-                <li>**B: Ancho de Banda** (Hercios, Hz) disponible en el canal.</li>
-                <li>**S/N: Relación Señal a Ruido** (Signal-to-Noise Ratio), una medida de la calidad de la señal. Un valor $S/N$ alto indica que la señal es significativamente más fuerte que el ruido.</li>
+                <li><b>C: Capacidad</b> del canal (bits por segundo, bps).</li>
+                <li><b>B: Ancho de Banda</b> (Hercios, Hz) disponible en el canal.</li>
+                <li><b>S/N: Relación Señal a Ruido</b> (Signal-to-Noise Ratio), una medida de la calidad de la señal. Un valor S/N alto indica que la señal es significativamente más fuerte que el ruido.</li>
             </ul>
-            <p>Este teorema subraya que para lograr mayores velocidades de transmisión, necesitamos ya sea un **mayor ancho de banda** o una **mejor relación señal a ruido** (es decir, menos ruido relativo a la señal).</p>
+            <p>Este teorema subraya que para lograr mayores velocidades de transmisión, necesitamos ya sea un <b>mayor ancho de banda</b> o una <b>mejor relación señal a ruido</b> (es decir, menos ruido relativo a la señal).</p>
             <div class="image-container">
                 
             </div>
@@ -56,39 +56,39 @@
         <hr>
 
         <section id="clasificacion">
-            <h2>Clasificación Principal de Canales</h2>
+            <h2>Clasificación principal de canales</h2>
             <p>Los canales se dividen en dos categorías fundamentales, basadas en si la energía de la señal es físicamente confinada o se irradia al espacio.</p>
 
             <div class="canal-tipo">
-                <h3>1. Canales Guiados (Alámbricos)</h3>
-                <p>En estos canales, la información se transmite a través de un **soporte físico sólido** que "guía" las ondas electromagnéticas, ofreciendo mayor control y protección contra interferencias externas.</p>
+                <h3>1. Canales guiados (Alámbricos)</h3>
+                <p>En estos canales, la información se transmite a través de un <b>soporte físico sólido</b> que "guía" las ondas electromagnéticas, ofreciendo mayor control y protección contra interferencias externas.</p>
                 <table>
                     <thead>
                         <tr>
-                            <th>Tipo de Canal</th>
-                            <th>Material y Estructura</th>
-                            <th>Aplicación Principal</th>
-                            <th>Ventajas Clave</th>
+                            <th>Tipo de canal</th>
+                            <th>Material y estructura</th>
+                            <th>Aplicación principal</th>
+                            <th>Ventajas clave</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>**Par Trenzado**</td>
+                            <td><b>Par trenzado</b></td>
                             <td>Dos conductores de cobre aislados, entrelazados para reducir la interferencia electromagnética.</td>
-                            <td>Redes de área local (**Ethernet** - Cat 5e, 6, 7), Telefonía fija.</td>
+                            <td>Redes de área local (Ethernet - Cat 5e, 6, 7), telefonía fija.</td>
                             <td>Bajo costo, fácil instalación, flexibilidad.</td>
                         </tr>
                         <tr>
-                            <td>**Cable Coaxial**</td>
+                            <td><b>Cable coaxial</b></td>
                             <td>Un conductor central rodeado por un aislante, un blindaje trenzado y una cubierta exterior.</td>
-                            <td>Televisión por cable (CATV), Redes de datos de corto alcance, Antenas.</td>
+                            <td>Televisión por cable (CATV), redes de datos de corto alcance, antenas.</td>
                             <td>Mayor ancho de banda que el par trenzado, buena inmunidad al ruido y diafonía.</td>
                         </tr>
                         <tr>
-                            <td>**Fibra Óptica**</td>
-                            <td>Filamentos delgados de vidrio o plástico que transmiten información mediante **pulsos de luz**.</td>
-                            <td>Troncales de Internet (submarinos/terrestres), Redes FTTH (Fiber To The Home), Centros de datos.</td>
-                            <td>**Máxima capacidad y velocidad**, nula interferencia electromagnética, muy baja atenuación, seguridad.</td>
+                            <td><b>Fibra óptica</b></td>
+                            <td>Filamentos delgados de vidrio o plástico que transmiten información mediante <b>pulsos de luz</b>.</td>
+                            <td>Troncales de internet (submarinos/terrestres), redes FTTH (Fiber To The Home), centros de datos.</td>
+                            <td><b>Máxima capacidad y velocidad</b>, nula interferencia electromagnética, muy baja atenuación, seguridad.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -98,34 +98,34 @@
             </div>
 
             <div class="canal-tipo">
-                <h3>2. Canales No Guiados (Inalámbricos)</h3>
-                <p>Aquí, la información se irradia al **espacio libre** (aire, vacío) mediante ondas electromagnéticas, sin necesidad de un soporte físico confinado. Son flexibles, pero más susceptibles a interferencias y desvanecimiento.</p>
+                <h3>2. Canales no guiados (Inalámbricos)</h3>
+                <p>Aquí, la información se irradia al <b>espacio libre</b> (aire, vacío) mediante ondas electromagnéticas, sin necesidad de un soporte físico confinado. Son flexibles, pero más susceptibles a interferencias y desvanecimiento.</p>
                 <table>
                     <thead>
                         <tr>
-                            <th>Rango de Frecuencia</th>
-                            <th>Nombre del Canal / Tipo de Onda</th>
-                            <th>Aplicación Principal</th>
-                            <th>Factor Clave</th>
+                            <th>Rango de frecuencia</th>
+                            <th>Nombre del canal / Tipo de onda</th>
+                            <th>Aplicación principal</th>
+                            <th>Factor clave</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Radiofrecuencia (RF)</td>
-                            <td>Ondas de Radio</td>
-                            <td>Radiodifusión (AM/FM), Televisión Abierta, Comunicaciones Marítimas, RFID.</td>
+                            <td>Ondas de radio</td>
+                            <td>Radiodifusión (AM/FM), televisión abierta, comunicaciones marítimas, RFID.</td>
                             <td>Propagación por onda terrestre o ionosférica (larga distancia, sorteo de obstáculos).</td>
                         </tr>
                         <tr>
                             <td>Microondas (SHF y EHF)</td>
-                            <td>Ondas Microondas</td>
-                            <td>Telefonía Móvil (2G, 3G, 4G, 5G), Enlaces Terrestres punto-a-punto, Comunicaciones Satelitales, Radares.</td>
+                            <td>Ondas microondas</td>
+                            <td>Telefonía móvil (2G, 3G, 4G, 5G), enlaces terrestres punto-a-punto, comunicaciones satelitales, radares.</td>
                             <td>Propagación por "línea de vista" (Line-of-Sight), susceptible a obstáculos y condiciones climáticas.</td>
                         </tr>
                         <tr>
                             <td>Óptico / Infrarrojo</td>
-                            <td>Ondas Infrarrojas y Visible</td>
-                            <td>Controles Remotos, Enlaces punto-a-punto de corta distancia (Li-Fi, IrDA), FSO (Free-Space Optics).</td>
+                            <td>Ondas infrarrojas y visible</td>
+                            <td>Controles remotos, enlaces punto-a-punto de corta distancia (Li-Fi, IrDA), FSO (Free-Space Optics).</td>
                             <td>Corto alcance, alta seguridad (en FSO), no penetra paredes, sensible a la luz solar y lluvia.</td>
                         </tr>
                     </tbody>
@@ -139,11 +139,11 @@
         <hr>
 
         <section id="fenomenos-afectan-canal">
-            <h2>Fenómenos que Afectan el Canal de Comunicación</h2>
+            <h2>Fenómenos que afectan el canal de comunicación</h2>
             <p>La calidad de la señal transmitida se degrada inevitablemente debido a varios fenómenos que ocurren en el canal, los cuales deben ser compensados o mitigados por el diseño del sistema de comunicación.</p>
 
             <div class="fenomeno-afecto">
-                <h3>1. Atenuación (Pérdida de Potencia)</h3>
+                <h3>1. Atenuación (Pérdida de potencia)</h3>
                 <p>Es la disminución de la amplitud o potencia de la señal a medida que viaja por el canal. Se debe a la absorción de energía en el medio y a la dispersión de la señal. En cables, es por la resistencia del conductor; en canales inalámbricos, por la distancia (pérdidas en el espacio libre) y absorción atmosférica.</p>
                 <div class="image-container">
                     
@@ -151,8 +151,8 @@
             </div>
 
             <div class="fenomeno-afecto">
-                <h3>2. Ruido Térmico (Ruido Blanco)</h3>
-                <p>Generado por el movimiento aleatorio de los electrones dentro de los componentes electrónicos de los dispositivos. Es inherente a **todos** los canales y receptores, y su presencia define el límite inferior de la potencia de señal detectable, impactando directamente en la capacidad máxima del canal (la 'N' en la fórmula de Shannon).</p>
+                <h3>2. Ruido térmico (Ruido blanco)</h3>
+                <p>Generado por el movimiento aleatorio de los electrones dentro de los componentes electrónicos de los dispositivos. Es inherente a <b>todos</b> los canales y receptores, y su presencia define el límite inferior de la potencia de señal detectable, impactando directamente en la capacidad máxima del canal (la 'N' en la fórmula de Shannon).</p>
                 <div class="image-container">
                     
                 </div>
@@ -162,8 +162,8 @@
                 <h3>3. Interferencia</h3>
                 <p>Son señales no deseadas que provienen de fuentes externas al sistema de comunicación principal, pero que comparten el mismo rango de frecuencia o proximidad física.</p>
                 <ul>
-                    <li>**Interferencia de Co-canal:** Proveniente de otros sistemas que operan en las mismas frecuencias (común en redes Wi-Fi saturadas o celdas adyacentes de telefonía móvil).</li>
-                    <li>**Diafonía (Crosstalk):** Inducción de señal no deseada de un circuito a otro adyacente (muy común en pares trenzados).</li>
+                    <li><b>Interferencia de Co-canal:</b> Proveniente de otros sistemas que operan en las mismas frecuencias (común en redes Wi-Fi saturadas o celdas adyacentes de telefonía móvil).</li>
+                    <li><b>Diafonía (Crosstalk):</b> Inducción de señal no deseada de un circuito a otro adyacente (muy común en pares trenzados).</li>
                 </ul>
                 <div class="image-container">
                     
@@ -174,8 +174,8 @@
                 <h3>4. Distorsión</h3>
                 <p>Ocurre cuando la forma de onda de la señal original se altera durante la transmisión.</p>
                 <ul>
-                    <li>**Distorsión por Retardo de Grupo:** Diferentes componentes de frecuencia de la señal viajan a velocidades ligeramente distintas a través del medio, lo que "desparrama" el pulso en el tiempo y puede causar errores (crítico en cables largos y fibra).</li>
-                    <li>**Eco y Multitrayecto (Multipath):** Fenómeno predominante en canales inalámbricos. La señal transmitida llega al receptor por múltiples caminos debido a reflexiones en edificios, montañas o el suelo. Esto puede causar que las réplicas de la señal lleguen desfasadas e interfieran constructiva o destructivamente, causando desvanecimiento o "fading".</li>
+                    <li><b>Distorsión por retardo de grupo:</b> Diferentes componentes de frecuencia de la señal viajan a velocidades ligeramente distintas a través del medio, lo que "desparrama" el pulso en el tiempo y puede causar errores (crítico en cables largos y fibra).</li>
+                    <li><b>Eco y Multitrayecto (Multipath):</b> Fenómeno predominante en canales inalámbricos. La señal transmitida llega al receptor por múltiples caminos debido a reflexiones en edificios, montañas o el suelo. Esto puede causar que las réplicas de la señal lleguen desfasadas e interfieran constructiva o destructivamente, causando desvanecimiento o "fading".</li>
                 </ul>
                 <div class="image-container">
                     
@@ -186,7 +186,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Información sobre Canales de Comunicación. Todos los derechos reservados.</p>
+        <p>Equipo 7</p>
     </footer>
 
 </body>
