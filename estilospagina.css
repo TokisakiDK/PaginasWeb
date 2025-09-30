@@ -1,0 +1,154 @@
+/* ========================================================= */
+/* ESTILOS BASE (ESCRITORIO) */
+/* ========================================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #0056b3; /* Azul más oscuro */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #0056b3;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    font-size: 2.2em;
+}
+h3 {
+    color: #28a745;
+    margin-top: 30px;
+    font-size: 1.6em;
+}
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.canal-tipo, .fenomeno-afecto {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-left: 5px solid #007bff; /* Barra lateral azul */
+    background-color: #e9f5ff; /* Fondo ligeramente azul */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.canal-tipo h3, .fenomeno-afecto h3 {
+    color: #0056b3;
+    margin-top: 0;
+}
+ul {
+    list-style: disc;
+    margin-left: 25px;
+    padding: 0;
+}
+li {
+    margin-bottom: 8px;
+}
+strong {
+    color: #d9534f; /* Color para resaltar */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    color: #555;
+}
+.formula {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.9em;
+}
+
+/* ========================================================= */
+/* ESTILOS RESPONSIVE (MÓVILES Y TABLETAS) */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+    /* Estilos generales para tabletas y móviles */
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del título principal */
+    }
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Estilos específicos para móviles (menos de 600px) */
+
+    /* Reducción de títulos */
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.8em; }
+    h3 { font-size: 1.3em; }
+    
+    /* Hacemos que el contenedor de la tabla permita el desplazamiento horizontal */
+    .canal-tipo {
+        padding: 10px;
+        border-left: none; 
+        overflow-x: auto; /* CLAVE: Permite el scroll horizontal SÓLO aquí */
+    }
+
+    /* Aseguramos que la tabla sea lo suficientemente ancha para forzar ese scroll */
+    table {
+        min-width: 650px; /* Asegura que la tabla tenga un ancho mínimo fijo */
+        width: auto; /* Desactiva el width: 100% que intenta reducirla */
+        border-collapse: collapse;
+    }
+}

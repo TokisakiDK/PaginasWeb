@@ -3,166 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="estilospagina.css">
+    
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
     <title>Canales de Comunicación en Telecomunicaciones 📡</title>
-    <style>
-        /* Estilos básicos para la presentación */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f2f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #0056b3; /* Azul más oscuro */
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        h1 {
-            margin: 0;
-            font-size: 3em;
-            letter-spacing: 1px;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-            opacity: 0.9;
-        }
-        main {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 30px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #0056b3;
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 10px;
-            margin-top: 40px;
-            font-size: 2.2em;
-        }
-        h3 {
-            color: #28a745;
-            margin-top: 30px;
-            font-size: 1.6em;
-        }
-        .image-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
-        .canal-tipo, .fenomeno-afecto {
-            margin-bottom: 25px;
-            padding: 20px;
-            border-left: 5px solid #007bff; /* Barra lateral azul */
-            background-color: #e9f5ff; /* Fondo ligeramente azul */
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        .canal-tipo h3, .fenomeno-afecto h3 {
-            color: #0056b3;
-            margin-top: 0;
-        }
-        ul {
-            list-style: disc;
-            margin-left: 25px;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        strong {
-            color: #d9534f; /* Color para resaltar */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-            color: #555;
-        }
-        code {
-            background-color: #eee;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .formula {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 20px 0;
-            text-align: center;
-            font-size: 1.1em;
-            border-radius: 5px;
-            overflow-x: auto; /* Para fórmulas largas */
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #0056b3;
-            color: white;
-            border-radius: 0 0 10px 10px;
-            font-size: 0.9em;
-        }
-        @media (max-width: 768px) {
-    /* Estilos generales para tabletas y móviles */
-    h1 {
-        font-size: 2em; /* Reduce el tamaño del título principal */
-    }
-    main {
-        padding: 15px;
-        margin: 10px;
-    }
-}
-
-@media (max-width: 600px) {
-    /* Estilos específicos para móviles (menos de 600px) */
-    
-    /* 1. Hacer que las tablas hagan scroll horizontalmente */
-    table, .canal-tipo {
-        display: block; /* La tabla ya no ocupa todo el ancho */
-        width: 100%;
-        overflow-x: auto; /* Permite scroll horizontal */
-        white-space: nowrap; /* Evita que el contenido de la tabla se rompa en varias líneas */
-    }
-    
-    /* 2. Mantener las celdas de la tabla comprimidas pero legibles */
-    table {
-        border-collapse: collapse;
-        min-width: 450px; /* Asegura un ancho mínimo para que las columnas no se superpongan */
-    }
-    
-    /* 3. Estilos para hacer que los bloques de contenido se vean mejor */
-    .canal-tipo {
-        /* Desactiva el margen lateral si se desea que ocupe todo el ancho */
-        padding: 10px;
-        border-left: none; 
-    }
-}
-    </style>
 </head>
 <body>
 
@@ -190,13 +37,15 @@
 
             <h3>Capacidad del Canal (Teorema de Shannon-Hartley)</h3>
             <p>La **capacidad del canal** es la métrica más importante, ya que define la máxima tasa de transferencia de información que un canal puede soportar de manera fiable sin errores. El icónico **Teorema de Shannon-Hartley** establece esta capacidad:</p>
+            
             <div class="formula">
-                <p>$$C = B \cdot \log_2\left(1 + \frac{S}{N}\right)$$</p>
+                $$C = B \cdot \log_2\left(1 + \frac{S}{N}\right)$$
             </div>
+            
             <ul>
-                <li><strong>C: Capacidad</strong> del canal (bits por segundo, bps).</li>
-                <li><strong>B: Ancho de Banda</strong> (Hercios, Hz) disponible en el canal.</li>
-                <li><strong>S/N: Relación Señal a Ruido</strong> (Signal-to-Noise Ratio), una medida de la calidad de la señal. Un valor $S/N$ alto indica que la señal es significativamente más fuerte que el ruido.</li>
+                <li>**C: Capacidad** del canal (bits por segundo, bps).</li>
+                <li>**B: Ancho de Banda** (Hercios, Hz) disponible en el canal.</li>
+                <li>**S/N: Relación Señal a Ruido** (Signal-to-Noise Ratio), una medida de la calidad de la señal. Un valor $S/N$ alto indica que la señal es significativamente más fuerte que el ruido.</li>
             </ul>
             <p>Este teorema subraya que para lograr mayores velocidades de transmisión, necesitamos ya sea un **mayor ancho de banda** o una **mejor relación señal a ruido** (es decir, menos ruido relativo a la señal).</p>
             <div class="image-container">
@@ -224,22 +73,22 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Par Trenzado</strong></td>
+                            <td>**Par Trenzado**</td>
                             <td>Dos conductores de cobre aislados, entrelazados para reducir la interferencia electromagnética.</td>
-                            <td>Redes de área local (<strong>Ethernet</strong> - Cat 5e, 6, 7), Telefonía fija.</td>
+                            <td>Redes de área local (**Ethernet** - Cat 5e, 6, 7), Telefonía fija.</td>
                             <td>Bajo costo, fácil instalación, flexibilidad.</td>
                         </tr>
                         <tr>
-                            <td><strong>Cable Coaxial</strong></td>
+                            <td>**Cable Coaxial**</td>
                             <td>Un conductor central rodeado por un aislante, un blindaje trenzado y una cubierta exterior.</td>
                             <td>Televisión por cable (CATV), Redes de datos de corto alcance, Antenas.</td>
                             <td>Mayor ancho de banda que el par trenzado, buena inmunidad al ruido y diafonía.</td>
                         </tr>
                         <tr>
-                            <td><strong>Fibra Óptica</strong></td>
+                            <td>**Fibra Óptica**</td>
                             <td>Filamentos delgados de vidrio o plástico que transmiten información mediante **pulsos de luz**.</td>
                             <td>Troncales de Internet (submarinos/terrestres), Redes FTTH (Fiber To The Home), Centros de datos.</td>
-                            <td><strong>Máxima capacidad y velocidad</strong>, nula interferencia electromagnética, muy baja atenuación, seguridad.</td>
+                            <td>**Máxima capacidad y velocidad**, nula interferencia electromagnética, muy baja atenuación, seguridad.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -313,8 +162,8 @@
                 <h3>3. Interferencia</h3>
                 <p>Son señales no deseadas que provienen de fuentes externas al sistema de comunicación principal, pero que comparten el mismo rango de frecuencia o proximidad física.</p>
                 <ul>
-                    <li><strong>Interferencia de Co-canal:</strong> Proveniente de otros sistemas que operan en las mismas frecuencias (común en redes Wi-Fi saturadas o celdas adyacentes de telefonía móvil).</li>
-                    <li><strong>Diafonía (Crosstalk):</strong> Inducción de señal no deseada de un circuito a otro adyacente (muy común en pares trenzados).</li>
+                    <li>**Interferencia de Co-canal:** Proveniente de otros sistemas que operan en las mismas frecuencias (común en redes Wi-Fi saturadas o celdas adyacentes de telefonía móvil).</li>
+                    <li>**Diafonía (Crosstalk):** Inducción de señal no deseada de un circuito a otro adyacente (muy común en pares trenzados).</li>
                 </ul>
                 <div class="image-container">
                     
@@ -325,8 +174,8 @@
                 <h3>4. Distorsión</h3>
                 <p>Ocurre cuando la forma de onda de la señal original se altera durante la transmisión.</p>
                 <ul>
-                    <li><strong>Distorsión por Retardo de Grupo:</strong> Diferentes componentes de frecuencia de la señal viajan a velocidades ligeramente distintas a través del medio, lo que "desparrama" el pulso en el tiempo y puede causar errores (crítico en cables largos y fibra).</li>
-                    <li><strong>Eco y Multitrayecto (Multipath):</strong> Fenómeno predominante en canales inalámbricos. La señal transmitida llega al receptor por múltiples caminos debido a reflexiones en edificios, montañas o el suelo. Esto puede causar que las réplicas de la señal lleguen desfasadas e interfieran constructiva o destructivamente, causando desvanecimiento o "fading".</li>
+                    <li>**Distorsión por Retardo de Grupo:** Diferentes componentes de frecuencia de la señal viajan a velocidades ligeramente distintas a través del medio, lo que "desparrama" el pulso en el tiempo y puede causar errores (crítico en cables largos y fibra).</li>
+                    <li>**Eco y Multitrayecto (Multipath):** Fenómeno predominante en canales inalámbricos. La señal transmitida llega al receptor por múltiples caminos debido a reflexiones en edificios, montañas o el suelo. Esto puede causar que las réplicas de la señal lleguen desfasadas e interfieran constructiva o destructivamente, causando desvanecimiento o "fading".</li>
                 </ul>
                 <div class="image-container">
                     
