@@ -127,6 +127,41 @@
             border-radius: 0 0 10px 10px;
             font-size: 0.9em;
         }
+        @media (max-width: 768px) {
+    /* Estilos generales para tabletas y móviles */
+    h1 {
+        font-size: 2em; /* Reduce el tamaño del título principal */
+    }
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Estilos específicos para móviles (menos de 600px) */
+    
+    /* 1. Hacer que las tablas hagan scroll horizontalmente */
+    table, .canal-tipo {
+        display: block; /* La tabla ya no ocupa todo el ancho */
+        width: 100%;
+        overflow-x: auto; /* Permite scroll horizontal */
+        white-space: nowrap; /* Evita que el contenido de la tabla se rompa en varias líneas */
+    }
+    
+    /* 2. Mantener las celdas de la tabla comprimidas pero legibles */
+    table {
+        border-collapse: collapse;
+        min-width: 450px; /* Asegura un ancho mínimo para que las columnas no se superpongan */
+    }
+    
+    /* 3. Estilos para hacer que los bloques de contenido se vean mejor */
+    .canal-tipo {
+        /* Desactiva el margen lateral si se desea que ocupe todo el ancho */
+        padding: 10px;
+        border-left: none; 
+    }
+}
     </style>
 </head>
 <body>
