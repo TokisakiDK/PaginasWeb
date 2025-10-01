@@ -9,7 +9,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
-    <title>Canales de Comunicación</title>
+    <title>Canales de Comunicación en Telecomunicaciones 📡</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
             <p>En el corazón de cualquier sistema de telecomunicaciones se encuentra el <b>canal de comunicación</b>: el medio físico o el espacio libre a través del cual una señal electromagnética se propaga desde un transmisor hasta un receptor. Es el camino invisible (o visible) que la información recorre, y sus características son determinantes para la calidad, velocidad y fiabilidad de la comunicación.</p>
             <p>Es crucial diferenciarlo del <b>medio de comunicación</b> (como la radio o la televisión, que son sistemas completos); el canal es la infraestructura subyacente que permite su funcionamiento. Sus propiedades intrínsecas, como el ancho de banda, el ruido y la atenuación, son los factores limitantes que los ingenieros deben optimizar.</p>
             <div class="image-container">
-                
+                <img src="https://www.researchgate.net/publication/260282313/figure/fig1/AS:668938757238816@1536498836884/Figura-1-Esquema-del-sistema-de-comunicacion.ppm" alt="Diagrama de Bloques de un Sistema de Comunicación">
             </div>
         </section>
 
@@ -49,7 +49,7 @@
             </ul>
             <p>Este teorema subraya que para lograr mayores velocidades de transmisión, necesitamos ya sea un <b>mayor ancho de banda</b> o una <b>mejor relación señal a ruido</b> (es decir, menos ruido relativo a la señal).</p>
             <div class="image-container">
-                
+                <img src="https://th.bing.com/th/id/R.b1adcf20ad1044f14d672ad5b6469bf4?rik=hdS1npULEam6RQ&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Gráfico de capacidad del canal versus relación señal-ruido">
             </div>
         </section>
 
@@ -61,7 +61,8 @@
 
             <div class="canal-tipo">
                 <h3>1. Canales guiados (Alámbricos)</h3>
-                <p>En estos canales, la información se transmite a través de un <b>soporte físico sólido</b> que "guía" las ondas electromagnéticas, ofreciendo mayor control y protección contra interferencias externas.</p>
+                <p>En estos canales, la información se transmite a través de un <b>soporte físico sólido</b> que "guía" las ondas electromagnéticas, ofreciendo mayor control y protección contra interferencias externas. La calidad de la transmisión depende directamente de las propiedades eléctricas y ópticas del medio.</p>
+
                 <table>
                     <thead>
                         <tr>
@@ -74,8 +75,8 @@
                     <tbody>
                         <tr>
                             <td><b>Par trenzado</b></td>
-                            <td>Dos conductores de cobre aislados, entrelazados para reducir la interferencia electromagnética.</td>
-                            <td>Redes de área local (Ethernet - Cat 5e, 6, 7), telefonía fija.</td>
+                            <td>Dos conductores de cobre aislados, entrelazados para reducir la interferencia electromagnética (diafonía).</td>
+                            <td>Redes de área local (<b>Ethernet</b> - Cat 5e, 6, 7), telefonía fija.</td>
                             <td>Bajo costo, fácil instalación, flexibilidad.</td>
                         </tr>
                         <tr>
@@ -93,13 +94,21 @@
                     </tbody>
                 </table>
                 <div class="image-container">
-                    
+                    <img src="https://holightoptic.com/wp-content/uploads/2023/03/Cable.png" alt="Sección transversal de par trenzado, cable coaxial y fibra óptica">
                 </div>
+
+                <h4>Detalles de la transmisión en Canales Guiados:</h4>
+                <p>La <b>transmisión por fibra óptica</b> es la tecnología dominante para la alta velocidad. Se basa en la reflexión interna total de la luz. Sus dos tipos principales son:</p>
+                <ul>
+                    <li><b>Multimodo:</b> Permite múltiples rayos de luz (modos) viajen, ideal para distancias cortas (LANs y edificios).</li>
+                    <li><b>Monomodo:</b> Permite que solo un rayo de luz viaje, logrando una atenuación mínima y una capacidad máxima, ideal para largas distancias (redes metropolitanas y submarinas).</li>
+                </ul>
             </div>
 
             <div class="canal-tipo">
                 <h3>2. Canales no guiados (Inalámbricos)</h3>
                 <p>Aquí, la información se irradia al <b>espacio libre</b> (aire, vacío) mediante ondas electromagnéticas, sin necesidad de un soporte físico confinado. Son flexibles, pero más susceptibles a interferencias y desvanecimiento.</p>
+                
                 <table>
                     <thead>
                         <tr>
@@ -131,8 +140,15 @@
                     </tbody>
                 </table>
                 <div class="image-container">
-                    
+                    <img src="https://definicion.de/wp-content/uploads/2024/04/ondas-de-radio.jpg" alt="Antena transmitiendo ondas electromagnéticas en el espacio libre">
                 </div>
+
+                <h4>Detalles de la transmisión en Canales No Guiados:</h4>
+                <p>La tecnología <b>inalámbrica</b> depende críticamente de la banda de frecuencia utilizada. Por ejemplo:</p>
+                <ul>
+                    <li><b>Wi-Fi y Telefonía Móvil:</b> Operan en bandas de microondas (UHF y SHF). La propagación ocurre principalmente por <b>reflexión, difracción y dispersión</b> para llegar a dispositivos que no están en la línea de vista directa con la antena.</li>
+                    <li><b>Comunicaciones Satelitales:</b> Utilizan bandas SHF y EHF. Los satélites de órbita baja (LEO) reducen la latencia pero requieren más satélites; los de órbita geoestacionaria (GEO) cubren grandes áreas pero tienen alta latencia.</li>
+                </ul>
             </div>
         </section>
 
@@ -146,7 +162,7 @@
                 <h3>1. Atenuación (Pérdida de potencia)</h3>
                 <p>Es la disminución de la amplitud o potencia de la señal a medida que viaja por el canal. Se debe a la absorción de energía en el medio y a la dispersión de la señal. En cables, es por la resistencia del conductor; en canales inalámbricos, por la distancia (pérdidas en el espacio libre) y absorción atmosférica.</p>
                 <div class="image-container">
-                    
+                    <img src="https://opticanaranjo.com.ar/wp-content/uploads/perdidas-en-fibra-optica-768x300.jpg" alt="Gráfico mostrando la atenuación de la señal con la distancia">
                 </div>
             </div>
 
@@ -154,7 +170,7 @@
                 <h3>2. Ruido térmico (Ruido blanco)</h3>
                 <p>Generado por el movimiento aleatorio de los electrones dentro de los componentes electrónicos de los dispositivos. Es inherente a <b>todos</b> los canales y receptores, y su presencia define el límite inferior de la potencia de señal detectable, impactando directamente en la capacidad máxima del canal (la 'N' en la fórmula de Shannon).</p>
                 <div class="image-container">
-                    
+                    <img src="https://www.researchgate.net/publication/333076739/figure/fig2/AS:11431281103132938@1669610207165/Figura-5-Onda-de-respuesta-idealizada-y-contaminada-con-ruido-blanco_Q640.jpg" alt="Onda limpia con ruido blanco superpuesto">
                 </div>
             </div>
 
@@ -166,7 +182,7 @@
                     <li><b>Diafonía (Crosstalk):</b> Inducción de señal no deseada de un circuito a otro adyacente (muy común en pares trenzados).</li>
                 </ul>
                 <div class="image-container">
-                    
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.Kp5fB8nBVhQ9igpG-8c_yAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Representación de la diafonía entre dos canales adyacentes">
                 </div>
             </div>
 
@@ -178,7 +194,7 @@
                     <li><b>Eco y Multitrayecto (Multipath):</b> Fenómeno predominante en canales inalámbricos. La señal transmitida llega al receptor por múltiples caminos debido a reflexiones en edificios, montañas o el suelo. Esto puede causar que las réplicas de la señal lleguen desfasadas e interfieran constructiva o destructivamente, causando desvanecimiento o "fading".</li>
                 </ul>
                 <div class="image-container">
-                    
+                    <img src="https://www.organichousewife.com/wp-content/uploads/2016/03/emf-house-final-copy-mitigation-remidiation-1.png" alt="Ilustración de ondas rebotando en edificios, creando múltiples trayectos">
                 </div>
             </div>
         </section>
